@@ -1,48 +1,5 @@
-<!DOCTYPE html>
-<html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Élégance Parisienne</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      body {
-        font-family: "Inter", sans-serif;
-      }
-      h1,
-      h2,
-      h3 {
-        font-family: "Playfair Display", serif;
-      }
-    </style>
-  </head>
-  <body class="bg-neutral-50 text-gray-900">
-    <!-- Barre de navigation -->
-    <header class="bg-white shadow-md sticky top-0 z-50">
-      <div
-        class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center"
-      >
-        <h1 class="text-2xl text-gray-800">🕴️ Élégance Parisienne</h1>
-        <nav class="space-x-6 text-sm">
-          <a href="index.html" class="text-gray-600 hover:text-black"
-            >Accueil</a
-          >
-          <a href="panier.html" class="text-gray-600 hover:text-black"
-            >Panier</a
-          >
-          <a href="login.html" class="text-gray-600 hover:text-black"
-            >Connexion</a
-          >
-        </nav>
-      </div>
-    </header>
+<?php include 'header.php' ?>
 
-    <!-- Section Héro -->
     <section
       class="bg-cover bg-center h-[85vh] flex items-center justify-center text-white"
     >
@@ -52,14 +9,13 @@
           Chapeaux élégants, gants raffinés, cannes de marche distinguées
         </p>
         <a
-          href="panier.html"
+          href="panier.php"
           class="bg-white text-black px-6 py-2 text-sm font-semibold rounded hover:bg-gray-200 transition"
           >Découvrir la collection</a
         >
       </div>
     </section>
-
-    <!-- Section Produits -->
+   <!-- // section produit  -->
     <section class="py-20">
       <div class="max-w-6xl mx-auto px-6">
         <h2 class="text-3xl text-center mb-12">Notre sélection</h2>
@@ -73,7 +29,7 @@
             <p class="text-gray-500">Pour une allure intemporelle.</p>
           </div>
 
-          <!-- Produit 2 -->
+          <!-- Produit -->
           <div
             class="bg-white shadow-lg rounded-lg p-6 text-center hover:scale-105 transition"
           >
@@ -82,7 +38,7 @@
             <p class="text-gray-500">Le détail discret mais essentiel.</p>
           </div>
 
-          <!-- Produit 3 -->
+          <!-- Produit -->
           <div
             class="bg-white shadow-lg rounded-lg p-6 text-center hover:scale-105 transition"
           >
@@ -94,9 +50,5 @@
       </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-100 text-center text-sm text-gray-500 py-6">
-      © 2025 Élégance Parisienne — Tous droits réservés.
-    </footer>
-  </body>
-</html>
+    <!--  le footer  encore en chantier-->
+<?php include 'footer.php' ?>
