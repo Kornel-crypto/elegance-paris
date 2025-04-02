@@ -1,5 +1,4 @@
-<?php include 'header.php'; 
-var_dump($_SESSION) ?>
+<?php include 'header.php';?>
 
     <section
       class="bg-cover bg-center h-[85vh] flex items-center justify-center text-white"
