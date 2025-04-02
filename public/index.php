@@ -6,7 +6,7 @@
       <div class="bg-black/50 p-10 rounded-lg text-center max-w-2xl">
         <h2 class="text-4xl mb-4">Accessoires de prestige</h2>
         <p class="text-lg mb-6">
-          Chapeaux élégants, gants raffinés, cannes de marche distinguées
+          Chapeaux élégants, gants raffinés, cannes de marche distinguées +++++
         </p>
         <a
           href="panier.php"

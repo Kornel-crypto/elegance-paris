@@ -1,6 +1,6 @@
 <?php
 
-require 'php/config.php';
+include '../php/config.php';
 
 // là je construit des tableaux à inserer //
 
@@ -34,18 +34,7 @@ $produits = [
         'type' => 'chapeau'
     ]
     ];
+    ?>
 
-foreach ($produits as $produit) {
-    $stmt = $pdo->prepare("INSERT INTO products (name, description, price, stock, type) VALUE (:name, :description, :price, :stock, :type)");
-    $stmt->execute([
-        'name' => $produit['name'],
-        'description' => $produit['decription'],
-        'price' => $produit['price'],
-        'stock' => $produit['stock'],
-        'type' => $produit['type']
-    ]);
-    }
+<a href="collections.php?add=<?= $product['id'] ?>" class="bg-black text-white px-4 py-2 text-sm rounded hover:bg-gray-800 transition">Ajouter au panier</a>
 
-echo 'les Produits ont été enregistrés avec succés 👍';
-
-?>
