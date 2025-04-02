@@ -20,8 +20,9 @@ try{
     if($user && password_verify($password, $user['password'])){
         $_SESSION['firstname'] = $user['firstname'];
         $_SESSION['lastname'] = $user['lastname'];
+        $_SESSION['id'] = $user['id'];
         $_SESSION['login'] = true;
-        echo $_SESSION['lastname'];
+        echo $_SESSION['id'];
     }else{
         die("Mot de passe incorrect");
     }
