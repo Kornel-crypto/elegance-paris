@@ -27,7 +27,9 @@
       <div
         class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center"
       >
+      <a href="index.php">
         <h1 class="text-2xl text-gray-800">🕴️ Élégance Parisienne</h1>
+      </a>
         <nav class="space-x-6 text-sm">
           <a href="index.php" class="text-gray-600 hover:text-black"
             >Accueil</a
@@ -36,9 +38,13 @@
             >Panier</a
           >
           <a href="collection.php" class="text-gray-600 hover:text-black">Nos Collections</a>
-          <a href="login.php" class="text-gray-600 hover:text-black"
-            >Connexion</a
-          >
+          <?php if(!isset($_SESSION['login'])): ?>
+          <a href="login.php" class="text-gray-600 hover:text-black">
+            Connexion
+            </a>
+          <?php else: ?>
+            <a href="../php/logout.php" class="text-gray-600 hover:text-black">Deconnexion</a>
+          <?php endif; ?>
         </nav>
       </div>
     </header>
