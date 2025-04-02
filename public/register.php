@@ -1,14 +1,16 @@
 <?php include 'header.php'; ?>
 
-<form action="elegance-paris/php/login.php" method="post" class="flex flex-col items-center gap-2">
-    <label for="login">login</label>
-    <input type="text" name="login">
+<form action="../php/register.php" method="post" class="flex flex-col items-center gap-2 mt-6">
+    <label for="lastname">Nom</label>
+    <input type="text" name="lastname">
+    <label for="firstname">Prenom</label>
+    <input type="text" name="firstname">
     <label for="email">Email</label>
     <input type="email" name="email">
-    <label for="password">Password</label>
+    <label for="password">Mot de passe</label>
     <input type="password" name="password">
-    <input type="submit" value="Submit" class="bg-red-300 cursor-pointer">
+    <input type="submit" value="Inscription" class="bg-red-300 cursor-pointer m-2 p-1">
 </form>
-<a href="login.php" class="text-xl flex justify-center">Or login</a>
+<a href="login.php" class="text-xl flex justify-center mb-8">Se connecter</a>
 
 <?php include 'footer.php'; ?>
