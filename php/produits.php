@@ -1,10 +1,6 @@
 <?include 'header.php'; ?>
 
 
-<body>
-    
-</body>
-
 
 
 

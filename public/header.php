@@ -34,6 +34,7 @@
           <a href="panier.php" class="text-gray-600 hover:text-black"
             >Panier</a
           >
+          <a href="collection.php" class="text-gray-600 hover:text-black">Nos Collections</a>
           <a href="login.php" class="text-gray-600 hover:text-black"
             >Connexion</a
           >

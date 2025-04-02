@@ -15,40 +15,7 @@
         >
       </div>
     </section>
-   <!-- // section produit  -->
-    <section class="py-20">
-      <div class="max-w-6xl mx-auto px-6">
-        <h2 class="text-3xl text-center mb-12">Notre sélection</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
-          <!-- Produit 1 -->
-          <div
-            class="bg-white shadow-lg rounded-lg p-6 text-center hover:scale-105 transition"
-          >
-            <div class="text-6xl mb-4">🎩</div>
-            <h3 class="text-xl font-semibold mb-2">Chapeaux élégants</h3>
-            <p class="text-gray-500">Pour une allure intemporelle.</p>
-          </div>
-
-          <!-- Produit -->
-          <div
-            class="bg-white shadow-lg rounded-lg p-6 text-center hover:scale-105 transition"
-          >
-            <div class="text-6xl mb-4">🧤</div>
-            <h3 class="text-xl font-semibold mb-2">Gants raffinés</h3>
-            <p class="text-gray-500">Le détail discret mais essentiel.</p>
-          </div>
-
-          <!-- Produit -->
-          <div
-            class="bg-white shadow-lg rounded-lg p-6 text-center hover:scale-105 transition"
-          >
-            <div class="text-6xl mb-4">🦯</div>
-            <h3 class="text-xl font-semibold mb-2">Cannes de marche</h3>
-            <p class="text-gray-500">Élégance et distinction à chaque pas.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+   
 
     <!--  le footer  encore en chantier-->
 <?php include 'footer.php' ?>
