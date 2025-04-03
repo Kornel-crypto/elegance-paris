@@ -27,23 +27,29 @@
       <div
         class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center"
       >
-      <a href="index.php">
+      <a href="/elegance-paris/public/index.php">
         <h1 class="text-2xl text-gray-800">🕴️ Élégance Parisienne</h1>
       </a>
+      <form action="/elegance-paris/php/searchbar.php" method="get">
+        <input type="text" name="search" placeholder="Rechercher" class="border border-gray-300 rounded-md px-2 py-1">
+      </form>
         <nav class="space-x-6 text-sm">
-          <a href="index.php" class="text-gray-600 hover:text-black"
+          <?php if(isset($_SESSION['admin'])):?>
+          <a href="">page admin</a>
+          <?php endif ?>
+          <a href="/elegance-paris/public/index.php" class="text-gray-600 hover:text-black"
             >Accueil</a
           >
-          <a href="panier.html" class="text-gray-600 hover:text-black"  // je met ici une autre adresse pour faire un test //
+          <a href="/elegance-paris/public/panier.php" class="text-gray-600 hover:text-black"  // je met ici une autre adresse pour faire un test //
             >Panier</a
           >
-          <a href="collection.php" class="text-gray-600 hover:text-black">Nos Collections</a>
+          <a href="/elegance-paris/public/collection.php" class="text-gray-600 hover:text-black">Nos Collections</a>
           <?php if(!isset($_SESSION['login'])): ?>
-          <a href="login.php" class="text-gray-600 hover:text-black">
+          <a href="/elegance-paris/public/login.php" class="text-gray-600 hover:text-black">
             Connexion
             </a>
           <?php else: ?>
-            <a href="../php/logout.php" class="text-gray-600 hover:text-black">Deconnexion</a>
+            <a href="/elegance-paris/php/logout.php" class="text-gray-600 hover:text-black">Deconnexion</a>
           <?php endif; ?>
         </nav>
       </div>

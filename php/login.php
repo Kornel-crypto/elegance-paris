@@ -22,6 +22,9 @@ try{
         $_SESSION['lastname'] = $user['lastname'];
         $_SESSION['id'] = $user['id'];
         $_SESSION['login'] = true;
+        if($user['account_type'] === 1){
+            $_SESSION['admin'] = true;
+        }
         echo $_SESSION['id'];
     }else{
         die("Mot de passe incorrect");

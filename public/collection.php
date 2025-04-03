@@ -1,15 +1,23 @@
 <?php
 include 'header.php';
 require '../php/config.php';
-session_start();
+include '../php/produits.php';
 
 
 
 // Requête pour récupérer les produits depuis la table "products"
-$produits = $conn->query("SELECT * FROM products")->fetchAll(PDO::FETCH_ASSOC);
+if(!isset($_GET['type'])){
+  $produits = $conn->query("SELECT * FROM products")->fetchAll(PDO::FETCH_ASSOC);
+}
+else{
+  $type = $_GET['type'];
+  $produits = getProductsByType($type);
+}
 ?>
 
 <script src="panier.js" defer></script>
+
+<?php include 'categorie.php'; ?>
 
 <h1>🧢 Collection Élégance Paris</h1>
 
@@ -18,14 +26,7 @@ $produits = $conn->query("SELECT * FROM products")->fetchAll(PDO::FETCH_ASSOC);
     <div class="carte-produit"
       data-id="<?= $produit['id'] ?>"
       data-nom="<?= htmlspecialchars($produit['name']) ?>"
-      data-prix="<?= $produit['price'] ?>"
-      data-image="<?= htmlspecialchars($produit['image']) ?>"
-    >
-      <img src="<?= htmlspecialchars($produit['image']) ?>"
-           alt="<?= htmlspecialchars($produit['nom']) ?>"
-           title="<?= htmlspecialchars($produit['descr']) ?>"
-           width="200"
-      >
+      data-prix="<?= $produit['price'] ?>">
       <h3><?= htmlspecialchars($produit['name']) ?></h3>
       <p><?= number_format($produit['price'], 2, ',', ' ') ?> €</p>
       <button class="ajouter-panier">Ajouter au panier</button>
