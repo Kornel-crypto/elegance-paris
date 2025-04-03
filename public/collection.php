@@ -23,6 +23,7 @@ else{
 
 <div class="collection">
   <?php foreach ($produits as $produit): ?>
+    
     <div class="carte-produit"
       data-id="<?= $produit['id'] ?>"
       data-nom="<?= htmlspecialchars($produit['name']) ?>"
