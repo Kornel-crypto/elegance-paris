@@ -32,10 +32,11 @@
       </a>
       <form action="/elegance-paris/php/searchbar.php" method="get">
         <input type="text" name="search" placeholder="Rechercher" class="border border-gray-300 rounded-md px-2 py-1">
+        <input type="submit" name="rechercher">
       </form>
         <nav class="space-x-6 text-sm">
           <?php if(isset($_SESSION['admin'])):?>
-          <a href="">page admin</a>
+          <a href="">Commande a préparer</a>
           <?php endif ?>
           <a href="/elegance-paris/public/index.php" class="text-gray-600 hover:text-black"
             >Accueil</a
