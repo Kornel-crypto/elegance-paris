@@ -15,9 +15,9 @@ else{
 }
 ?>
 
+<?php include 'categorie.php'; ?>
 <script src="panier.js" defer></script>
 
-<?php include 'categorie.php'; ?>
 
 <h1>🧢 Collection Élégance Paris</h1>
 
@@ -39,7 +39,6 @@ else{
     </div>
   <?php endforeach; ?>
 </div>
-<p>`pppppppppppppppppp</p>
 
 <?php include 'footer.php'; ?>
 

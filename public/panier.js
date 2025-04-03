@@ -1,32 +1,28 @@
-const boutonsAjout = document.querySelectorAll(".ajouter-panier");
-
-boutonsAjout.forEach((bouton) => {
+document.querySelectorAll(".ajouter-panier").forEach((bouton) => {
   bouton.addEventListener("click", () => {
     const carte = bouton.closest(".carte-produit");
-    const id = carte.dataset.id;
     const nom = carte.dataset.nom;
     const prix = parseFloat(carte.dataset.prix);
-    const image = carte.dataset.image;
+    const id = carte.dataset.id;
 
-    const produit = {
-      id,
-      nom,
-      prix,
-      image,
-      quantite: 1,
-    };
+    const image = "la place d'une image";
+    const panier = JSON.parse(localStorage.getItem("panier")) || [];
 
-    let panier = JSON.parse(localStorage.getItem("panier")) || [];
+    const articleExistant = panier.find((item) => item.id === id);
 
-    const indexProduit = panier.findIndex((item) => item.id === id);
-
-    if (indexProduit !== -1) {
-      panier[indexProduit].quantite += 1;
+    if (articleExistant) {
+      articleExistant.quantite += 1;
     } else {
-      panier.push(produit);
+      panier.push({
+        id,
+        nom,
+        prix,
+        quantite: 1,
+        image,
+      });
     }
 
     localStorage.setItem("panier", JSON.stringify(panier));
-    alert(`${nom} a été ajouté au panier 🛒`);
+    alert(`${nom} a été ajouté au panier`);
   });
 });
