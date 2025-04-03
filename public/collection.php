@@ -28,8 +28,9 @@ else{
       data-nom="<?= htmlspecialchars($produit['name']) ?>"
       data-prix="<?= $produit['price'] ?>">
       <h3><?= htmlspecialchars($produit['name']) ?></h3>
+      <p><?= htmlspecialchars($produit['description']) ?></p>
       <p><?= number_format($produit['price'], 2, ',', ' ') ?> €</p>
-      <button class="ajouter-panier">Ajouter au panier</button>
+      <button class="ajouter-panier bg-red-800 text-white p-1">Ajouter au panier</button>
       <?php if(isset($_SESSION['admin'])): ?>
         <a href="modifier-produit.php?id=<?= $produit['id'] ?>" class='bg-blue-300 p-2'>Modifier</a>
         <p>Stock restant : <?= $produit['stock'] ?></p>
