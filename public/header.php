@@ -34,7 +34,7 @@
           <a href="index.php" class="text-gray-600 hover:text-black"
             >Accueil</a
           >
-          <a href="panier.php" class="text-gray-600 hover:text-black"
+          <a href="panier.html" class="text-gray-600 hover:text-black"  // je met ici une autre adresse pour faire un test //
             >Panier</a
           >
           <a href="collection.php" class="text-gray-600 hover:text-black">Nos Collections</a>
