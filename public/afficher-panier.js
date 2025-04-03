@@ -16,8 +16,6 @@ if (panier.length === 0) {
 
     const bloc = document.createElement("div");
     bloc.classList.add("article-panier");
-    // À l’intérieur du forEach (on remplace le bloc.innerHTML actuel par celui-ci) :
-
     bloc.innerHTML = `
   <img src="${article.image}" alt="${article.nom}" width="100">
   <h3>${article.nom}</h3>
