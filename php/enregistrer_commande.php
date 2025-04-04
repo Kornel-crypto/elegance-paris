@@ -15,7 +15,7 @@ if (!$data || !isset($data['articles'])) {
     exit;
 }
 
-$email = isset($_SESSION['email']) ? $_SESSION['email'] : "invité";
+$email = isset($_SESSION['email']) ? $_SESSION['email'] : null;
 
 try {
     foreach ($data['articles'] as $article) {

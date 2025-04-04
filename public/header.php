@@ -37,7 +37,7 @@
       </form>
         <nav class="space-x-6 text-sm">
           <?php if(isset($_SESSION['admin'])):?>
-          <a href="">Commande a préparer</a>
+          <a href="/elegance-paris/php/admin.php">Commande a préparer</a>
           <?php endif ?>
           <a href="/elegance-paris/public/index.php" class="text-gray-600 hover:text-black"
             >Accueil</a

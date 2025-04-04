@@ -22,7 +22,6 @@ function afficherPanier(panierActuel) {
     const bloc = document.createElement("div");
     bloc.classList.add("article-panier");
     bloc.innerHTML = `
-      <img src="${article.image}" alt="${article.nom}" width="100">
       <h3>${article.nom}</h3>
       <p>Prix : ${article.prix} €</p>
       <p>Quantité : ${article.quantite}</p>

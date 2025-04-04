@@ -20,6 +20,7 @@ try{
     if($user && password_verify($password, $user['password'])){
         $_SESSION['firstname'] = $user['firstname'];
         $_SESSION['lastname'] = $user['lastname'];
+        $_SESSION['email'] = $user['email'];
         $_SESSION['id'] = $user['id'];
         $_SESSION['login'] = true;
         if($user['account_type'] === 1){

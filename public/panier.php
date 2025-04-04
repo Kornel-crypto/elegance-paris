@@ -9,8 +9,11 @@
     <hr>
         <button id="vider-panier">Vider le panier 🗑️</button>
     <hr>
-    <button id="valider-commande">Valider la commande ✅</button>
-    
+    <?php if(isset($_SESSION['login'])): ?>
+        <button id="valider-commande">Valider la commande ✅</button>
+    <?php else: ?>
+        <button id="valider-commande" disabled>Valider la commande ✔</button>
+    <?php endif; ?>
 
     <script src="afficher-panier.js" defer></script>
 
