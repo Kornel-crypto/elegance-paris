@@ -10,9 +10,6 @@ if(isset($_GET['search'])){
     $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
 
-// header('Location: /elegance-paris/public/collection.php?type='.$_GET['search']);
-// exit;
-
 include '../public/header.php';
 
 foreach ($products as $product):?>
