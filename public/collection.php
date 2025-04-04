@@ -31,9 +31,10 @@ else{
       <h3><?= htmlspecialchars($produit['name']) ?></h3>
       <p><?= htmlspecialchars($produit['description']) ?></p>
       <p><?= number_format($produit['price'], 2, ',', ' ') ?> €</p>
-      <button class="ajouter-panier bg-red-800 text-white p-1">Ajouter au panier</button>
+      <button class="ajouter-panier bg-green-800 text-white p-1">Ajouter au panier</button>
       <?php if(isset($_SESSION['admin'])): ?>
-        <a href="modifier-produit.php?id=<?= $produit['id'] ?>" class='bg-blue-300 p-2'>Modifier</a>
+        <a href="modification.php?id=<?= $produit['id'] ?>" class='bg-blue-300 p-2'>Modifier</a>
+        <a href="../php/delete_article.php?id=<?php $produit['id'] ?>" class="p-2 bg-red-800 text-white">Supprimer un article</a>
         <p>Stock restant : <?= $produit['stock'] ?></p>
       <?php endif; ?>
     </div>
