@@ -10,7 +10,7 @@
         <button id="vider-panier">Vider le panier 🗑️</button>
     <hr>
     <button id="valider-commande">Valider la commande ✅</button>
-
+    
 
     <script src="afficher-panier.js" defer></script>
 

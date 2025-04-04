@@ -15,14 +15,15 @@ else{
 }
 ?>
 
+<?php include 'categorie.php'; ?>
 <script src="panier.js" defer></script>
 
-<?php include 'categorie.php'; ?>
 
 <h1>🧢 Collection Élégance Paris</h1>
 
 <div class="collection">
-  <?php foreach ($produits as $produit):?>
+  <?php foreach ($produits as $produit): ?>
+    
     <div class="carte-produit"
       data-id="<?= $produit['id'] ?>"
       data-nom="<?= htmlspecialchars($produit['name']) ?>"
