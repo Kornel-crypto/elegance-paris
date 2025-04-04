@@ -15,7 +15,6 @@ else{
 }
 ?>
 
-<?php include 'categorie.php'; ?>
 <script src="panier.js" defer></script>
 
 
@@ -34,7 +33,7 @@ else{
       <button class="ajouter-panier bg-green-800 text-white p-1">Ajouter au panier</button>
       <?php if(isset($_SESSION['admin'])): ?>
         <a href="modification.php?id=<?= $produit['id'] ?>" class='bg-blue-300 p-2'>Modifier</a>
-        <a href="../php/delete_article.php?id=<?php $produit['id'] ?>" class="p-2 bg-red-800 text-white">Supprimer un article</a>
+        <a href="../php/delete_article.php?id=<?= $produit['id'] ?>" class="p-2 bg-red-800 text-white">Supprimer un article</a>
         <p>Stock restant : <?= $produit['stock'] ?></p>
       <?php endif; ?>
     </div>

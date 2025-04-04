@@ -19,19 +19,25 @@ include 'header.php';
 <?php endforeach; ?>
 
 <div class="">
-    <form action="../php/add_article.php" class="flex flex-col">
+    <form action="../php/add_article.php" class="flex flex-col" method='POST'>
         <label for="name">Nom:
-            <input type="text" name="name" placeholder="nom du produit">
+            <input type="text" name="name" placeholder="nom du produit" required>
         </label>
         <label for="description">Description:
-            <input type="text" name="description" placeholder="description du produit" class="p-1">
+            <textarea name="description" id="" required></textarea>
         </label>
         <label for="price">Prix :
-            <input type="text" name="price" placeholder="prix du produit">
+            <input type="text" name="price" placeholder="prix du produit" required>
         </label>
         <label for="stock">Stock: 
-            <input type="text" name="stock" placeholder="Quantité en stock">
+            <input type="text" name="stock" placeholder="Quantité en stock" required>
         </label>
+        <select name="type" required>
+            <option value="">--Choisir un genre--</option>
+            <option value="chapeau">Chapeau</option>
+            <option value="canne">Canne</option>
+            <option value="gant">Gants</option>
+        </select>
         <input type="submit" value="Ajouter un article" class="p-2 bg-blue-800 text-white">
     </form>
 </div>

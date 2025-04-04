@@ -115,12 +115,12 @@
       </div>
         <div class="flex justify-center items-center gap-x-[140px] mt-[-10px] pb-[10px] font-[Helvetica] italic">
         <?php if(isset($_SESSION['admin'])):?>
-          <a href="">page admin</a>
+          <a href="admin_page.php">page admin</a>
           <?php endif ?>
           <a href="/elegance-paris/public/index.php" class="text-gray-600 hover:text-black"
             >Accueil</a
           >
-          <a href="/elegance-paris/public/collection.php" class="text-gray-600 hover:text-black">Nos Collections</a>
+          <a href="/elegance-paris/public/categorie.php" class="text-gray-600 hover:text-black">Nos Collections</a>
           <?php if(!isset($_SESSION['login'])): ?>
           <a href="/elegance-paris/public/login.php" class="text-gray-600 hover:text-black">
             Connexion
@@ -135,4 +135,3 @@
         </nav>
       </div>
     </header>
-    

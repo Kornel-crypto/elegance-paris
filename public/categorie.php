@@ -1,3 +1,5 @@
+<?php include 'header.php'; ?>
+
 <div class="flex flex-row justify-around mt-[50px]">
 <div class="flex flex-col">
   <img src="images/chapeau_tendance.png" alt="Chapeau" class="w-[600px] rounded-t-[57px] box-shadow">
@@ -30,3 +32,5 @@
     </div>
   </div>
 </div>
+
+<?php include 'footer.php'; ?>
