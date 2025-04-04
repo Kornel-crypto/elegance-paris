@@ -8,7 +8,7 @@ include 'header.php';
 
     foreach ($orders as $order): ?>
 
-    <div class="carte-produit">
+    <div class="carte-produit border-2">
         <h2><?= $order['customer_email'] ?></h2>
         <p><?= $order['product_name'] ?></p>
         <p><?= $order['quantity'] ?></p>
